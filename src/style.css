@@ -1,1 +1,46 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.card {
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+/* estilos para cada pinta */
+.heart,
+.diamond {
+  color: red;
+}
+.spade,
+.club {
+  color: black;
+}
+/* estilos para el número/letra */
+.value {
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* estilos para el símbolo */
+.symbol {
+  position: absolute;
+  font-size: 35px;
+  font-weight: bold;
+}
+.top-left {
+  top: 5px;
+  left: 5px;
+}
+.bottom-right {
+  bottom: 5px;
+  right: 5px;
+  transform: rotate(180deg);
+}
